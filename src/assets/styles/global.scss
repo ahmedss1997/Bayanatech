@@ -1,0 +1,38 @@
+#app.v-application,
+#app.v-application .text-h1,
+#app.v-application .text-h2,
+#app.v-application .text-h3,
+#app.v-application .text-h4,
+#app.v-application .text-h5,
+#app.v-application .text-h6,
+#app.v-application .text-body-1,
+#app.v-application .text-body-2,
+#app.v-application .text-caption {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.bordd {
+  border: 3px dashed #ddd;
+}
+
+#app {
+  .v-input__slot {
+    box-shadow: 0px 0px 0px 5px #f2f7fd, 0px 0px 0px 5px #f2f7fd !important;
+    border-radius: 5px;
+    padding: 0px 12px;
+  }
+  .tel-input .v-text-field {
+    padding: 0 5px;
+    margin-top: 0;
+  }
+  .tel-input .v-text-field__slot {
+    padding: 0 5px;
+  }
+  .tel-input
+    .theme--light.v-text-field
+    > .v-input__control
+    > .v-input__slot::before {
+    border: none !important;
+  }
+  
+}

@@ -1,0 +1,24 @@
+{
+  "colors": {
+    "light": {
+      "primary": "#0A6DCA",
+      "lightPrimary":"#F2F7FD",
+      "txtOnPrimary":"#fff",
+      "support": "#f0f0f1",
+      "textHead": "#010B14",
+      "textOnP": "#969CAA",
+      "foterColor": "#7A7F84",
+      "black": "#000",
+      "btnjob": "#0647FB",
+      "ticket": "#CEE2F5"
+    },
+    "dark": {
+      "support": "#aaa",
+      "primary": "#2699fb",
+      "secondary": "#b0bec5",
+      "accent": "#8c9eff",
+      "error": "#e61212",
+      "warning": "#DDA322"
+    }
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "navBar": {
+    "nav": {
+      "home":"Home",
+      "about":"About Us",
+      "services":"Services",
+      "solutions":"Solutions",
+      "products": "Products",
+      "recruitment":"Recruitment",
+      "contactUs": "Contact Us",
+      "itSupport":"IT Support"
+    },
+    "servicesList": {
+      "link1": "Network infrastructure development",
+      "desc1": "Supply and installation of computers and servers",
+      "link2": "Server maintenance and supply",
+      "desc2": "Supply and installation of computers and servers",
+      "link3": "Attendance and departure devices",
+      "desc3": "Attendance and departure devices with fingerprint, face print or card",
+      "link4": "Maintenance and technical support contracts",
+      "desc4": "Technical support and maintenance",
+      "link5": "Our services to the sector and education",
+      "desc5": "We meet all the needs of the school leader and leader and provide multiple technical services",
+      "link6": "Surveillance Cameras",
+      "desc6": "Protecting your personal belongings from all dangers is very important"
+    },
+    "solutionsList": {
+      "link1": "Network Solutions",
+      "desc1": "Building and developing local communication networks in companies, offices and government agencies",
+      "link2": "Wireless Network Solutions",
+      "desc2": "The security of your information is extremely important",
+      "link3": "Network and data security solutions",
+      "desc3": "We use the best technology used in connectivity to meet your needs",
+      "link4": "Branch Connection Solutions",
+      "desc4": "Our linking options are multiple"
+    },
+    "productsList": {
+      "link1": "cloud construction system",
+      "desc1": "The system aims to automate and organize all administrative, financial and technical work",
+      "link2": "Haseeb Accounting and Inventory",
+      "desc2": "The system aims to automate and organize all administrative, financial and technical work"
+    }
+  },
+  "sideBar": {
+    "side": {
+      "home":"Home",
+      "about":"About Us",
+      "services":"Services",
+      "solutions":"Solutions",
+      "products": "Products",
+      "recruitment":"Recruitment",
+      "contactUs": "Contact Us",
+      "itSupport":"IT Support"
+    },
+    "servicesList": {
+      "link1": "Network infrastructure development",
+      "link2": "Server maintenance and supply",
+      "link3": "Attendance and departure devices",
+      "link4": "Maintenance and technical support contracts",
+      "link5": "Our services to the sector and education",
+      "link6": "Surveillance Cameras"
+    },
+    "solutionsList": {
+      "link1": "Network Solutions",
+      "link2": "Wireless Network Solutions",
+      "link3": "Network and data security solutions",
+      "link4": "Branch Connection Solutions"
+    },
+    "productsList": {
+      "link1": "cloud construction system",
+      "link2": "Haseeb Accounting and Inventory"
+    }
+  },
+  "footer": {
+    "services": {
+      "heading": "Services",
+      "link1": "Network infrastructure development",
+      "link2": "Server maintenance and supply",
+      "link3": "Attendance and departure devices",
+      "link4": "Maintenance and technical support contracts",
+      "link5": "Our services to the sector and education",
+      "link6": "Surveillance Cameras"
+    },
+    "solutions": {
+      "heading": "Solutions",
+      "link1": "Network Solutions",
+      "link2": "Wireless Network Solutions",
+      "link3": "Network and data security solutions",
+      "link4": "Branch Connection Solutions"
+    },
+    "priavcy": "All rights reserved, your data"
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "last Name",
+    "email": "Email",
+    "password": "Password",
+    "repeatpass": "Repeat Password",
+    "forgetPassword": "Forgot password?",
+    "phone": "Phone Number",
+    "textarea": "From You",
+    "TheMessage": "The Message",
+    "message": "Write Your Message",
+    "file": "Files",
+    "choosFile": "(choosen)",
+    "upload": "upload file",
+    "slice": "Slice",
+    "select": "Section",
+    "head": "Inquire About The Price",
+    "headTicnekal": "Open a new technical support ticket",
+    "btn": "Send Requset",
+    "login": "LogIn ",
+    "rigster": " Register ",
+    "dontHave": "Don't have an account yet ?",
+    "alredyHave": "Already have an account ?"
+  },
+  "Home": {
+    "headerHeading":"Planning and Executing Professionally",
+    "headerP":"You are in the right place",
+    "aboutHeading":"Cloud reconstruction system",
+    "aboutP": "The system aims to automate and organize all administrative, financial and technical work, by converting it from a paper transaction system to an electronic transaction system to increase the efficiency of work in engineering and surveying offices and provide distinguished and accurate services to the clients of the engineering office.",
+    "orderPrice": "Order Price",
+    "services":"Our Services",
+    "serviceP": "This text is an example of text that can be replaced in the same space. It's done",
+    "serviceSpan": "Generate this text from the Arabic text generator",
+    "servicesBox": {
+      "Box1": {
+        "title": "Network infrastructure development",
+        "text": "Whether you want to create, develop or expand network systems, we have our highly skilled engineering staff to meet current and future network needs."
+      },
+      "Box2": {
+        "title": "Server maintenance and supply",
+        "text": "Whether you want to create, develop or expand network systems, we have our highly skilled engineering staff to meet current and future network needs."
+      },
+      "Box3": {
+        "title": "Attendance and departure devices",
+        "text": "Attendance and departure devices with fingerprint, face print or card"
+      },
+      "Box4": {
+        "title": "Maintenance contracts and technical support",
+        "text": "Technical support and maintenance"
+      },
+      "Box5": {
+        "title": "Our services to the education sector",
+        "text": "We meet all the needs of the school leader and leader, and we provide multiple technical services"
+      },
+      "Box6": {
+        "title": "Surveillance Cameras",
+        "text": "Protecting your personal belongings from all dangers is very important"
+      },
+      "btn": "More"
+    },
+    "orderService": {
+      "title": "Order your service Now from",
+      "text": "We have over 12 of experience with hundreds of projects.",
+      "btn": "Order Now"
+    },
+    "solutions": {
+      "heading": "Our Solutions",
+      "phargraph": "This text is an example of text that can be replaced in the same space. It's done",
+      "span": "Generate this text from the Arabic text generator",
+      "Box1": {
+        "title": "Network Solutions",
+        "text": "Building and developing local communication networks in companies, offices and government agencies"
+      },
+      "Box2": {
+        "title": "Wireless Network Solutions",
+        "text": "We use the best technology used in connectivity to meet your needs"
+      },
+      "Box3": {
+        "title": "Network and data security solutions",
+        "text": "The security of your information is extremely important"
+      },
+      "Box4": {
+        "title": "Connecting solutions",
+        "tSpan": "branches",
+        "text": "Our linking options are multiple"
+      },
+      "btn": "More"
+    },
+    "testimonials": {
+      "heading": "Customer Reviews",
+      "Box1": {
+        "title": "Ali Mohammed Al-Qarmshi",
+        "descrption": "Support services manager",
+        "text": "The Endowment of the Custodian of the Two Holy Mosques King Abdullah bin Abdulaziz extends its thanks and appreciation to his parents for Bayanatak for Information Technology for their wonderful efforts that had an effective impact in developing the infrastructure of the computer network and information systems, with my best wishes for further progress and success"
+      },
+      "Box2": {
+        "title": "Ali Mohammed Al-Qarmshi",
+        "descrption": "Support services manager",
+        "text": "The Endowment of the Custodian of the Two Holy Mosques King Abdullah bin Abdulaziz extends its thanks and appreciation to his parents for Bayanatak for Information Technology for their wonderful efforts that had an effective impact in developing the infrastructure of the computer network and information systems, with my best wishes for further progress and success"
+      },
+      "Box3": {
+        "title": "Ali Mohammed Al-Qarmshi",
+        "descrption": "Support services manager",
+        "text": "The Endowment of the Custodian of the Two Holy Mosques King Abdullah bin Abdulaziz extends its thanks and appreciation to his parents for Bayanatak for Information Technology for their wonderful efforts that had an effective impact in developing the infrastructure of the computer network and information systems, with my best wishes for further progress and success"
+      },
+      "Box4": {
+        "title": "Ali Mohammed Al-Qarmshi",
+        "descrption": "Support services manager",
+        "text": "The Endowment of the Custodian of the Two Holy Mosques King Abdullah bin Abdulaziz extends its thanks and appreciation to his parents for Bayanatak for Information Technology for their wonderful efforts that had an effective impact in developing the infrastructure of the computer network and information systems, with my best wishes for further progress and success"
+      },
+      "Box5": {
+        "title": "Ali Mohammed Al-Qarmshi",
+        "descrption": "Support services manager",
+        "text": "The Endowment of the Custodian of the Two Holy Mosques King Abdullah bin Abdulaziz extends its thanks and appreciation to his parents for Bayanatak for Information Technology for their wonderful efforts that had an effective impact in developing the infrastructure of the computer network and information systems, with my best wishes for further progress and success"
+      }
+    },
+    "clients": {
+      "title": "From Our Clients",
+      "textP": "Our customers are the measure of our success. We view them as business partners and strive to ",
+      "textSpan": "always remain their best choice"
+    }
+  },
+  "About": {
+    "head-about": {
+      "heading": "who are we ?",
+      "text1": "We at Bayanatak seek to develop all solutions related to the field of information technology and electronic solutions to our customers in order to enable them to continue developing their businesses with ease and ease.",
+      "text2": "We provide the best integrated solutions in all areas of networks, data centers, consulting, monitoring systems, computers, and after-sales services and simplify the use of computer systems. And because our customers are the measure of our success, we view them as business partners and strive to strengthen the bonds of common interests among us and are committed to providing the highest levels of support to bring their business to the desired level, God willing.",
+      "boxText1": "years of experience",
+      "boxText2": "Completed projects",
+      "boxText3": "happy customers"
+    },
+    "cv-about": {
+      "heading": "Profile",
+      "span": "Download profile",
+      "text1": "Your Data Corporation for Information Technology is considered one of the integrated services institutions that provide its customers with all the services that enable them to continue to achieve their goals, and we can summarize our services in the following items",
+      "text2": "Technical consulting services for IT departments within companies",
+      "text3": "Contracts for building and maintaining networks of all kinds .. local networks, wide networks that provide communication between several branches, in addition to WAN WIRELESS networks",
+      "text4": "Annual maintenance and technical support contracts, and the supply of computers and accessories",
+      "text5": "Building and establishing the infrastructure for computer networks, telephone exchanges, surveillance cameras and alarm devices."
+    },
+    "our-seen": {
+      "heading1": "our vision",
+      "text1": "We see that we do our best to achieve the desired degree of success, and we always take our share of the full responsibility for the hoped-for success and client expectations. However, we also feel that our role should be more positive and participatory than that of other bodies.",
+      "heading2": "our mission",
+      "text2": "Continuous work on developing and diversifying what advanced electronics offers by aligning its business strategies to match the priorities of our customers, creating long-term strategic partnerships, and continuing to empower and develop our national cadres by adhering to the highest professional and ethical standards."
+    }
+  },
+  "Services": {
+    "contract": {
+      "heading": "Maintenance contracts and technical support",
+      "text": "The fact that the maintenance contracts concluded between Bayanatak and its customers are flexible contracts that allow customers to obtain the maximum possible benefits from the contract with the lowest possible costs, so that the optimal formula for all items is agreed upon by both parties and in a manner that suits the business needs of these two parties, provided that The contract includes the following outlines"
+    },
+    "support": {
+      "box1": {
+        "heading": "Regular visits and preventive maintenance",
+        "text": "Your data organization visits your business premises periodically and with a number that can be agreed upon, and these visits aim to conduct a preventive examination of the devices so that errors are detected early (and before the problem occurs), which gives us the opportunity to avoid the occurrence of emergency malfunctions that obstruct the work and take the necessary measures to fix it."
+      },
+      "box2": {
+        "heading": "emergency communication",
+        "text": "In the event of an emergency problem or any malfunction that requires any kind of technical support, the customer is contacted by the technical support department at Bayanatek. Item in the following cases"
+      },
+      "box3": {
+        "heading": "systems development",
+        "text": "Your data is not only concerned with the field of conducting maintenance contracts, but also in the field of IT development in its various aspects and aspects. From this point of view, the company must give advice on a permanent basis to develop the system of its customers, with its experience in the field of analysis and development of companies' work systems."
+      }
+    }
+  },
+  "System": {
+    "head-system": {
+      "heading": "cloud construction system",
+      "heading-tow": "Haseeb Accounting and Inventory",
+      "text": "The system aims to automate and organize all administrative, financial and technical work, by converting it from a paper transaction system to an electronic transaction system to increase the efficiency of work in engineering and surveying offices and provide distinguished and accurate services to the clients of the engineering office.",
+      "btn1": "Download profile",
+      "btn2": "Request a quote"
+    },
+    "advantages": {
+      "heading": "Advantages",
+      "box1": {
+        "heading": "Increase your sales",
+        "text": "This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters generated by the application."
+      },
+      "box2": {
+        "heading": "reduce your costs",
+        "text": "This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters generated by the application."
+      },
+      "box3": {
+        "heading": "Reduce human errors",
+        "text": "This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters generated by the application."
+      }
+    },
+    "services-system": {
+      "heading": "Services",
+      "phargraph": "This text is an example of text that can be replaced in the same space. It's done",
+      "span": "Generate this text from the Arabic text generator",
+      "box1": {
+        "headin": "Compatible with e-invoice",
+        "text": "Complies with the requirements of the regulations for electronic invoice, as well as the tax invoice (simplified - and detailed). The invoice includes a QR code for quick verification. The system supports all accounting services, financial statements, and final accounts."
+      },
+      "box2": {
+        "heading": "Secretarial and customer registration",
+        "text": "Through it, the personal data of the client, and the data of the broker or agent are recorded and documented, and all documents and documents are uploaded from the identity, agency image and other documents, in addition to recording the client's communication data and uploading it within the client's documents"
+      },
+      "box3": {
+        "heading": "Accounting bonds and financial reports",
+        "text": "Supports sales invoice, returns, purchases and journal entries, receipt and exchange vouchers, in addition to the customer contracts system - payments / installments. It also supports sending the invoice in electronic form to the customer in addition to SMS messages on the invoice, and an endless tree accounting directory."
+      },
+      "box4": {
+        "heading": "Easy project movement management",
+        "text": "Managing and following up the movement of tasks and distributing them to engineers, specifying the main and sub-stages of the project, adding tasks to employees in each stage, and specifying a time period for each task."
+      },
+      "box5": {
+        "headin": "Compatible with e-invoice",
+        "text": "Complies with the requirements of the regulations for electronic invoice, as well as the tax invoice (simplified - and detailed). The invoice includes a QR code for quick verification. The system supports all accounting services, financial statements, and final accounts."
+      }
+    },
+    "system-support": {
+      "box1": {
+        "heading": "Integrated data security",
+        "text": "Projects and files are secured thanks to the use of the latest programming techniques and encryption algorithms to keep your information safe"
+      },
+      "box2": {
+        "heading": "Access from anywhere is easy",
+        "text": "Tameer Cloud System gives you the freedom to access your projects from anywhere and do your work at any time and from any device because Taameer depends on the cloud."
+      }
+    },
+    "detal-advantages": {
+      "heading": "Advantages",
+      "phargraph": "This text is an example of text that can be replaced in the same space. It's done",
+      "span": "Generate this text from the Arabic text generator",
+      "links": {
+        "link1": "customer system",
+        "link2": "incoming and outgoing system",
+        "link3": "project management system",
+        "link4": "Personnel System",
+        "link5": "Accounting system",
+        "link6": "control Board"
+      }
+    },
+    "detal-videoss": {
+      "heading": "System explanations",
+      "box1": {
+        "heading": "About Tameer Cloud System - New Version"
+      },
+      "box2": {
+        "heading": "A quick tour of Taameer Cloud System"
+      },
+      "box3": {
+        "heading": "How do I create a new project"
+      },
+      "box4": {
+        "heading": "Learn about system menus, and archive"
+      }
+    }
+  },
+  "Jobs": {
+    "heading": "Jobs",
+    "phargraph": "Since our jobs are purely technical, they are differentiated on the basis of years of experience and previous work, so we should note that no CV will be considered if previous work is not attached with it.",
+    "box1": {
+      "title": "Project Manager",
+      "span1": "Riyadh, Saudi Arabia",
+      "span2": "Full-time",
+      "text": "Monitor projects from inception to launch and coordinate with other team players in order to manage time and create solutions that help deliver projects as required",
+      "btn": "Apply"
+    }
+  },
+  "JobDescrption": {
+    "heading": "Be a Project Manager at",
+    "span": "Bayanatc",
+    "list1": {
+      "title": "Responsibilities",
+      "li1": "Work on the successful implementation and launch of the project",
+      "li2": "Coordination between team, client and third party service providers.",
+      "li3": "Develop project scopes and objectives, through communication between all relevant stakeholders and ensuring technical feasibility.",
+      "li4": "Good risk management to reduce project risks.",
+      "li5": "Ensure availability and allocation of resources.",
+      "li6": "Develop a detailed project plan to track progress.",
+      "li7": "Reporting of progress to interested parties.",
+      "li8": "Ensure that all projects are delivered on time, within the specified scope and within budget and in accordance with agreed standards and targets.",
+      "li9": "Evaluate the success of the project against its evaluation and share lessons or best practices with other organizations or project managers.",
+      "li10": "Use appropriate verification techniques to manage changes in project scope, schedule, and costs.",
+      "li11": "Managing the relationship with the client and all stakeholders."
+    },
+    "list2": {
+      "title": "Requirements",
+      "li1": "Significant educational background, preferably in the fields of computer science or engineering for technical project managers.",
+      "li2": "Strong technical background, with understanding or practical experience in software development and web technologies."
+    },
+    "formHeading": "Apply Now"
+  },
+  "contact": {
+    "heading1": "Contact Us",
+    "location": "Madinah Al-Munawwarah - Khaled Ibn Al-Waleed Street - Al-Qiblatain Roundabout - opposite an oil station ",
+    "heading2": "Our Location"
+  },
+  "tickets": {
+    "heading": "Tickets",
+    "btn": "Add New Ticket",
+    "table": {
+      "thead": {
+        "th1": "NameClient",
+        "th2": "NameEmployee",
+        "th3": "Phone",
+        "th4": "Status",
+        "th5": "Action"
+      },
+      "tbody": {
+        "tr1": {
+          "td1": "jhone",
+          "td2": "Jessy",
+          "td3": "+966123468767",
+          "td4": {
+            "id": 1,
+            "value": "Done"
+          }
+        },
+        "tr2": {
+          "td1": "Hary",
+          "td2": "Fored",
+          "td3": "+966123468767",
+          "td4": {
+            "id": 2,
+            "value": "Processing"
+          }
+        },
+        "tr3": {
+          "td1": "Danial",
+          "td2": "Jessy",
+          "td3": "+966123468767",
+          "td4": {
+            "id": 3,
+            "value": "Waiting Response"
+          }
+        },        
+        "tr4": {
+          "td1": "Fored",
+          "td2": "Danial",
+          "td3": "+966123468767",
+          "td4": {
+            "id": 1,
+            "value": "Done"
+          }
+        },
+        "tr5": {
+          "td1": "jhone",
+          "td2": "Hary",
+          "td3": "+966123468767",
+          "td4": {
+            "id": 2,
+            "value": "Processing"
+          }
+        }
+      },
+      "Action": {
+        "edit": "Edit",
+        "delete": "Delete"
+      },
+      "dialogs": {
+        "headingAdd": "Add New Ticket",
+        "headingEdit": "Edit Ticket",
+        "headingDelete": "Delete Ticket",
+        "text": "Are you sure want to delete? ",
+        "nameClient": "Name Client",
+        "nameEmployee": "Name Employee",
+        "btnSend": "Submit ",
+        "btnCancle": "Cancel ",
+        "btnDelete": "Delete"
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

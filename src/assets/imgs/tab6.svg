@@ -1,0 +1,11 @@
+<svg id="attendance_tab_select" xmlns="http://www.w3.org/2000/svg" width="40.691" height="35.763" viewBox="0 0 40.691 35.763">
+  <path id="Path_170688" data-name="Path 170688" d="M35.763,19.806V0H0V31H24.808a8.344,8.344,0,1,0,10.955-11.19ZM7.153,2.384H28.611V4.769H7.153ZM2.384,28.611V2.384H4.769V7.153H31V2.384h2.383V19.137a8.45,8.45,0,0,0-1.033-.064A8.355,8.355,0,0,0,24,27.419a8.448,8.448,0,0,0,.086,1.192H2.384Zm29.962,4.768a5.96,5.96,0,1,1,5.961-5.96A5.967,5.967,0,0,1,32.346,33.379Z" fill="#969caa"/>
+  <path id="Path_170689" data-name="Path 170689" d="M28.786,20.619H26.942v3.687h3.687V22.463H28.786Z" transform="translate(6.375 4.055)" fill="#969caa"/>
+  <rect id="Rectangle_5871" data-name="Rectangle 5871" width="5.531" height="1.844" transform="translate(3.687 12.114)" fill="#969caa"/>
+  <rect id="Rectangle_5872" data-name="Rectangle 5872" width="5.531" height="1.844" transform="translate(14.997 12.114)" fill="#969caa"/>
+  <rect id="Rectangle_5873" data-name="Rectangle 5873" width="5.531" height="1.844" transform="translate(24.995 12.114)" fill="#969caa"/>
+  <rect id="Rectangle_5874" data-name="Rectangle 5874" width="5.531" height="1.844" transform="translate(14.997 16.96)" fill="#969caa"/>
+  <rect id="Rectangle_5875" data-name="Rectangle 5875" width="5.531" height="1.844" transform="translate(3.687 16.96)" fill="#969caa"/>
+  <rect id="Rectangle_5876" data-name="Rectangle 5876" width="5.531" height="1.844" transform="translate(3.687 21.806)" fill="#969caa"/>
+  <rect id="Rectangle_5877" data-name="Rectangle 5877" width="5.531" height="1.844" transform="translate(14.997 21.806)" fill="#969caa"/>
+</svg>

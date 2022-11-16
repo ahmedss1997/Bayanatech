@@ -65,7 +65,7 @@
             </span>
             <span class="switch-button-label-span">EN</span>
             <span
-              class="switchMove txtOnPrimary"
+              class="switchMove switch"
               :class="$i18n.locale == 'ar' ? '' : 'right'"
             ></span>
           </div>

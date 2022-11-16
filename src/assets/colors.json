@@ -10,7 +10,11 @@
       "foterColor": "#7A7F84",
       "black": "#000",
       "btnjob": "#0647FB",
-      "ticket": "#CEE2F5"
+      "ticket": "#CEE2F5",
+      "switch": "#c2d9f5",
+      "donebtn": "#24B82F",
+      "processbtn": "#24B4B8",
+      "waitingbtn": "#DCCA56"
     },
     "dark": {
       "support": "#aaa",

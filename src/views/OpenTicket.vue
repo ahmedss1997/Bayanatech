@@ -68,6 +68,7 @@
               <v-btn
                 block
                 rounded
+                href="/ticket"
                 elevation="0"
                 class="py-7 my-10 primary txtOnPrimary--text text-h6"
                 @click="createAccount()"

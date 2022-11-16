@@ -19,11 +19,13 @@
                       {{ $t("Home.orderService.text") }}
                     </p>
                   </div>
-                  <button
-                    class="w-40 h-16 txtOnPrimary primary--text rounded-pill mt-5"
-                  >
-                    {{ $t("Home.orderService.btn") }}
-                  </button>
+                  <router-link to="/inqPrice">
+                    <button
+                      class="w-40 h-16 txtOnPrimary primary--text rounded-pill mt-5"
+                    >
+                      {{ $t("Home.orderService.btn") }}
+                    </button>
+                  </router-link>
                 </div>
               </v-col>
               <v-col cols="12" md="6">

@@ -1,119 +1,4 @@
 {
-  "navBar": {
-    "nav": {
-      "home":"Home",
-      "about":"About Us",
-      "services":"Services",
-      "solutions":"Solutions",
-      "products": "Products",
-      "recruitment":"Recruitment",
-      "contactUs": "Contact Us",
-      "itSupport":"IT Support"
-    },
-    "servicesList": {
-      "link1": "Network infrastructure development",
-      "desc1": "Supply and installation of computers and servers",
-      "link2": "Server maintenance and supply",
-      "desc2": "Supply and installation of computers and servers",
-      "link3": "Attendance and departure devices",
-      "desc3": "Attendance and departure devices with fingerprint, face print or card",
-      "link4": "Maintenance and technical support contracts",
-      "desc4": "Technical support and maintenance",
-      "link5": "Our services to the sector and education",
-      "desc5": "We meet all the needs of the school leader and leader and provide multiple technical services",
-      "link6": "Surveillance Cameras",
-      "desc6": "Protecting your personal belongings from all dangers is very important"
-    },
-    "solutionsList": {
-      "link1": "Network Solutions",
-      "desc1": "Building and developing local communication networks in companies, offices and government agencies",
-      "link2": "Wireless Network Solutions",
-      "desc2": "The security of your information is extremely important",
-      "link3": "Network and data security solutions",
-      "desc3": "We use the best technology used in connectivity to meet your needs",
-      "link4": "Branch Connection Solutions",
-      "desc4": "Our linking options are multiple"
-    },
-    "productsList": {
-      "link1": "cloud construction system",
-      "desc1": "The system aims to automate and organize all administrative, financial and technical work",
-      "link2": "Haseeb Accounting and Inventory",
-      "desc2": "The system aims to automate and organize all administrative, financial and technical work"
-    }
-  },
-  "sideBar": {
-    "side": {
-      "home":"Home",
-      "about":"About Us",
-      "services":"Services",
-      "solutions":"Solutions",
-      "products": "Products",
-      "recruitment":"Recruitment",
-      "contactUs": "Contact Us",
-      "itSupport":"IT Support"
-    },
-    "servicesList": {
-      "link1": "Network infrastructure development",
-      "link2": "Server maintenance and supply",
-      "link3": "Attendance and departure devices",
-      "link4": "Maintenance and technical support contracts",
-      "link5": "Our services to the sector and education",
-      "link6": "Surveillance Cameras"
-    },
-    "solutionsList": {
-      "link1": "Network Solutions",
-      "link2": "Wireless Network Solutions",
-      "link3": "Network and data security solutions",
-      "link4": "Branch Connection Solutions"
-    },
-    "productsList": {
-      "link1": "cloud construction system",
-      "link2": "Haseeb Accounting and Inventory"
-    }
-  },
-  "footer": {
-    "services": {
-      "heading": "Services",
-      "link1": "Network infrastructure development",
-      "link2": "Server maintenance and supply",
-      "link3": "Attendance and departure devices",
-      "link4": "Maintenance and technical support contracts",
-      "link5": "Our services to the sector and education",
-      "link6": "Surveillance Cameras"
-    },
-    "solutions": {
-      "heading": "Solutions",
-      "link1": "Network Solutions",
-      "link2": "Wireless Network Solutions",
-      "link3": "Network and data security solutions",
-      "link4": "Branch Connection Solutions"
-    },
-    "priavcy": "All rights reserved, your data"
-  },
-  "form": {
-    "firstName": "First Name",
-    "lastName": "last Name",
-    "email": "Email",
-    "password": "Password",
-    "repeatpass": "Repeat Password",
-    "forgetPassword": "Forgot password?",
-    "phone": "Phone Number",
-    "textarea": "From You",
-    "TheMessage": "The Message",
-    "message": "Write Your Message",
-    "file": "Files",
-    "choosFile": "(choosen)",
-    "upload": "upload file",
-    "slice": "Slice",
-    "select": "Section",
-    "head": "Inquire About The Price",
-    "headTicnekal": "Open a new technical support ticket",
-    "btn": "Send Requset",
-    "login": "LogIn ",
-    "rigster": " Register ",
-    "dontHave": "Don't have an account yet ?",
-    "alredyHave": "Already have an account ?"
-  },
   "Home": {
     "headerHeading":"Planning and Executing Professionally",
     "headerP":"You are in the right place",
@@ -458,6 +343,121 @@
         "btnDelete": "Delete"
       }
     }
+  },
+  "navBar": {
+    "nav": {
+      "home":"Home",
+      "about":"About Us",
+      "services":"Services",
+      "solutions":"Solutions",
+      "products": "Products",
+      "recruitment":"Recruitment",
+      "contactUs": "Contact Us",
+      "itSupport":"IT Support"
+    },
+    "servicesList": {
+      "link1": "Network infrastructure development",
+      "desc1": "Supply and installation of computers and servers",
+      "link2": "Server maintenance and supply",
+      "desc2": "Supply and installation of computers and servers",
+      "link3": "Attendance and departure devices",
+      "desc3": "Attendance and departure devices with fingerprint, face print or card",
+      "link4": "Maintenance and technical support contracts",
+      "desc4": "Technical support and maintenance",
+      "link5": "Our services to the sector and education",
+      "desc5": "We meet all the needs of the school leader and leader and provide multiple technical services",
+      "link6": "Surveillance Cameras",
+      "desc6": "Protecting your personal belongings from all dangers is very important"
+    },
+    "solutionsList": {
+      "link1": "Network Solutions",
+      "desc1": "Building and developing local communication networks in companies, offices and government agencies",
+      "link2": "Wireless Network Solutions",
+      "desc2": "The security of your information is extremely important",
+      "link3": "Network and data security solutions",
+      "desc3": "We use the best technology used in connectivity to meet your needs",
+      "link4": "Branch Connection Solutions",
+      "desc4": "Our linking options are multiple"
+    },
+    "productsList": {
+      "link1": "cloud construction system",
+      "desc1": "The system aims to automate and organize all administrative, financial and technical work",
+      "link2": "Haseeb Accounting and Inventory",
+      "desc2": "The system aims to automate and organize all administrative, financial and technical work"
+    }
+  },
+  "sideBar": {
+    "side": {
+      "home":"Home",
+      "about":"About Us",
+      "services":"Services",
+      "solutions":"Solutions",
+      "products": "Products",
+      "recruitment":"Recruitment",
+      "contactUs": "Contact Us",
+      "itSupport":"IT Support"
+    },
+    "servicesList": {
+      "link1": "Network infrastructure development",
+      "link2": "Server maintenance and supply",
+      "link3": "Attendance and departure devices",
+      "link4": "Maintenance and technical support contracts",
+      "link5": "Our services to the sector and education",
+      "link6": "Surveillance Cameras"
+    },
+    "solutionsList": {
+      "link1": "Network Solutions",
+      "link2": "Wireless Network Solutions",
+      "link3": "Network and data security solutions",
+      "link4": "Branch Connection Solutions"
+    },
+    "productsList": {
+      "link1": "cloud construction system",
+      "link2": "Haseeb Accounting and Inventory"
+    }
+  },
+  "footer": {
+    "services": {
+      "heading": "Services",
+      "link1": "Network infrastructure development",
+      "link2": "Server maintenance and supply",
+      "link3": "Attendance and departure devices",
+      "link4": "Maintenance and technical support contracts",
+      "link5": "Our services to the sector and education",
+      "link6": "Surveillance Cameras"
+    },
+    "solutions": {
+      "heading": "Solutions",
+      "link1": "Network Solutions",
+      "link2": "Wireless Network Solutions",
+      "link3": "Network and data security solutions",
+      "link4": "Branch Connection Solutions"
+    },
+    "priavcy": "All rights reserved, your data"
+  },
+  "form": {
+    "firstName": "First Name",
+    "lastName": "last Name",
+    "email": "Email",
+    "password": "Password",
+    "repeatpass": "Repeat Password",
+    "forgetPassword": "Forgot password?",
+    "phone": "Phone Number",
+    "textarea": "From You",
+    "TheMessage": "The Message",
+    "message": "Write Your Message",
+    "file": "Files",
+    "choosFile": "(choosen)",
+    "upload": "upload file",
+    "slice": "Slice",
+    "select": "Section",
+    "head": "Inquire About The Price",
+    "headTicnekal": "Open a new technical support ticket",
+    "btn": "Send Requset",
+    "login": "LogIn ",
+    "rigster": " Register ",
+    "dontHave": "Don't have an account yet ?",
+    "alredyHave": "Already have an account ?"
   }
 }
 

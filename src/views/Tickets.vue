@@ -167,10 +167,10 @@
                         <v-btn
                           :color="
                             ticket.id == 1
-                              ? 'success'
+                              ? 'donebtn txtOnPrimary--text'
                               : ticket.id == 2
-                              ? 'primary'
-                              : 'warning'
+                              ? 'processbtn txtOnPrimary--text'
+                              : 'waitingbtn txtOnPrimary--text'
                           "
                         >
                           {{ $t(ticket.Status) }}

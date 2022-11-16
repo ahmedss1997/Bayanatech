@@ -55,6 +55,7 @@
                 block
                 rounded
                 elevation="0"
+                href="/openTick"
                 class="py-7 primary txtOnPrimary--text"
                 @click="createAccount()"
               >

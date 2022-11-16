@@ -51,26 +51,28 @@
                 </v-col>
                 <v-col cols="12"> </v-col>
               </v-row>
-              <v-btn
-                block
-                rounded
-                elevation="0"
-                href="/openTick"
-                class="py-7 primary txtOnPrimary--text"
-                @click="createAccount()"
-              >
-                {{ $t(`form.login`) }}
-              </v-btn>
+              <router-link to="/openTick">
+                <v-btn
+                  block
+                  rounded
+                  elevation="0"
+                  class="py-7 primary txtOnPrimary--text"
+                  @click="createAccount()"
+                >
+                  {{ $t(`form.login`) }}
+                </v-btn>
+              </router-link>
               <v-card-actions class="justify-center">
                 <span class="px-0">{{ $t(`form.dontHave`) }}</span>
-                <v-btn
-                  color="darkPrimary"
-                  text
-                  href="/register"
-                  class="px-2 text-capitalize primary--text"
-                >
-                  {{ $t(`form.rigster`) }}
-                </v-btn>
+                <router-link to="/register">
+                  <v-btn
+                    color="darkPrimary"
+                    text
+                    class="px-2 text-capitalize primary--text"
+                  >
+                    {{ $t(`form.rigster`) }}
+                  </v-btn>
+                </router-link>
               </v-card-actions>
             </v-container>
           </v-form>

@@ -114,14 +114,15 @@
               </v-btn>
               <v-card-actions class="justify-center">
                 <span class="px-0">Already have an account?</span>
-                <v-btn
-                  color="warning"
-                  text
-                  href="/Login"
-                  class="px-0 text-capitalize"
-                >
-                  Login
-                </v-btn>
+                <router-link to="/logIn">
+                  <v-btn
+                    color="warning"
+                    text
+                    class="px-0 text-capitalize"
+                  >
+                    Login
+                  </v-btn>
+                </router-link>
               </v-card-actions>
             </v-form>
           </v-window-item>
@@ -134,14 +135,16 @@
               </v-sheet>
               <v-card-actions class="justify-center">
                 <span class="px-0">Don't have account?</span>
-                <v-btn
-                  color="warning"
-                  text
-                  href="/signUp"
-                  class="px-0 mx-2 text-capitalize"
-                >
-                  Register
-                </v-btn>
+                <router-link to="/register">
+                  <v-btn
+                    color="warning"
+                    text
+                    href="/signUp"
+                    class="px-0 mx-2 text-capitalize"
+                  >
+                    Register
+                  </v-btn>
+                </router-link>
               </v-card-actions>
             </v-form>
           </v-window-item>

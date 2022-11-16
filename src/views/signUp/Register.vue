@@ -105,14 +105,15 @@
               </v-btn>
               <v-card-actions class="justify-center">
                 <span class="px-0">{{ $t(`form.alredyHave`) }}</span>
-                <v-btn
-                  color="darkPrimary"
-                  text
-                  href="/logIn"
-                  class="px-0 text-capitalize primary--text"
-                >
-                  {{ $t(`form.login`) }}
-                </v-btn>
+                <router-link to="/logIn">
+                  <v-btn
+                    color="darkPrimary"
+                    text
+                    class="px-0 text-capitalize primary--text"
+                  >
+                    {{ $t(`form.login`) }}
+                  </v-btn>
+                </router-link>
               </v-card-actions>
             </v-container>
           </v-form>

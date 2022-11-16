@@ -65,16 +65,17 @@
                   </div>
                 </v-col>
               </v-row>
-              <v-btn
-                block
-                rounded
-                href="/ticket"
-                elevation="0"
-                class="py-7 my-10 primary txtOnPrimary--text text-h6"
-                @click="createAccount()"
-              >
-                {{ $t(`form.btn`) }}
-              </v-btn>
+              <router-link to="/ticket">
+                <v-btn
+                  block
+                  rounded
+                  elevation="0"
+                  class="py-7 my-10 primary txtOnPrimary--text text-h6"
+                  @click="createAccount()"
+                >
+                  {{ $t(`form.btn`) }}
+                </v-btn>
+              </router-link>
             </v-container>
           </v-form>
         </v-sheet>

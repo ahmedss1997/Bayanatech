@@ -20,6 +20,12 @@
     box-shadow: 0px 0px 0px 5px #f2f7fd, 0px 0px 0px 5px #f2f7fd !important;
     border-radius: 5px;
     padding: 0px 12px;
+    .v-select__selections {
+      justify-content: center;
+      .vti__flag  {
+        margin: 0 !important;
+      }
+    }
   }
   .tel-input .v-text-field {
     padding: 0 5px;

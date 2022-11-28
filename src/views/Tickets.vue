@@ -57,7 +57,7 @@
                     </v-card-title>
                     <v-card-text>
                       <v-container>
-                        <v-form ref="addProduct">
+                        <v-form ref="addTickect">
                           <v-row no-gutters>
                             <v-col class="px-3 mb-4" cols="12" md="6">
                               <span class="font-weight-bold px-0 my-3 d-block">
@@ -69,7 +69,7 @@
                                 :label="$t(`tickets.table.dialogs.nameClient`)"
                                 solo
                                 :hide-details="false"
-                                v-model="newData.Name"
+                                v-model="newData.NameClient"
                                 :rules="validationRules.textRules"
                               ></v-text-field>
                             </v-col>
@@ -85,7 +85,7 @@
                                 "
                                 solo
                                 :hide-details="false"
-                                v-model="newData.ParCode"
+                                v-model="newData.NameEmployee"
                                 :rules="validationRules.textRules"
                               ></v-text-field>
                             </v-col>
@@ -94,6 +94,7 @@
                                 {{ $t(`form.phone`) }}
                               </span>
                               <vue-tel-input-vuetify
+                                v-model="newData.Phone"
                                 :rules="validationRules.numberRules"
                                 :label="$t(`form.phone`)"
                                 wrapperClasses="v-text-field v-text-field--single-line v-text-field--solo tel-input mt-0 pt-0"
@@ -110,7 +111,7 @@
                                 :label="$t(`tickets.table.thead.th4`)"
                                 solo
                                 :hide-details="false"
-                                v-model="newData.Price"
+                                v-model="newData.Status"
                                 :rules="validationRules.textRules"
                               ></v-text-field>
                             </v-col>
@@ -118,7 +119,7 @@
                               class="primary txtOnPrimary--text text-capitalize font-bold text-h6 my-10 mx-auto pt-3 pb-4 px-10 d-block rounded-pill"
                               height="50"
                               width="200"
-                              @click="AddProduct()"
+                              @click="AddTicket()"
                             >
                               {{ $t(`tickets.table.dialogs.btnSend`) }}
                             </v-btn>
@@ -152,7 +153,7 @@
                   </thead>
                   <tbody>
                     <tr
-                      v-for="(ticket, i) in Tickets.slice()"
+                      v-for="(ticket, i) in allTickets.slice()"
                       :key="i"
                       class="h-20"
                     >
@@ -166,9 +167,9 @@
                       <td class="text-left px-3">
                         <v-btn
                           :color="
-                            ticket.id == 1
+                            ticket.ticketStatus == 1
                               ? 'donebtn txtOnPrimary--text'
-                              : ticket.id == 2
+                              : ticket.ticketStatus == 2
                               ? 'processbtn txtOnPrimary--text'
                               : 'waitingbtn txtOnPrimary--text'
                           "
@@ -203,7 +204,7 @@
                                   <v-list-item
                                     v-bind="attrs"
                                     v-on="on"
-                                    @click="sendID()"
+                                    @click="sendID(ticket)"
                                   >
                                     <v-icon class="mx-1 text-h6">
                                       mdi-grease-pencil
@@ -268,7 +269,7 @@
                                               "
                                               solo
                                               :hide-details="false"
-                                              v-model="newData.Name"
+                                              v-model="editData.NameClient"
                                               :rules="validationRules.textRules"
                                             ></v-text-field>
                                           </v-col>
@@ -296,7 +297,7 @@
                                               "
                                               solo
                                               :hide-details="false"
-                                              v-model="newData.ParCode"
+                                              v-model="editData.NameEmployee"
                                               :rules="validationRules.textRules"
                                             ></v-text-field>
                                           </v-col>
@@ -311,6 +312,7 @@
                                               {{ $t(`form.phone`) }}
                                             </span>
                                             <vue-tel-input-vuetify
+                                              v-model="editData.Phone"
                                               :rules="
                                                 validationRules.numberRules
                                               "
@@ -339,7 +341,7 @@
                                               "
                                               solo
                                               :hide-details="false"
-                                              v-model="newData.Price"
+                                              v-model="editData.Status"
                                               :rules="validationRules.textRules"
                                             ></v-text-field>
                                           </v-col>
@@ -347,6 +349,7 @@
                                             class="primary txtOnPrimary--text text-capitalize font-bold text-h6 my-10 mx-auto pt-3 pb-4 px-10 d-block rounded-pill"
                                             height="50"
                                             width="200"
+                                            @click="EditTicket()"
                                           >
                                             {{
                                               $t(
@@ -413,6 +416,7 @@
                                     <v-container>
                                       <v-row no-gutters class="justify-center">
                                         <div
+                                          @click="DeleteTicket()"
                                           class="shadow-none border-blue-600 border-solid border hover:bg-blue-600 hover:text-white text-primary transition-all duration-500 ease-in-out flex flex-none justify-center items-center text-capitalize font-bold text-h6 mx-3 mb-5 rounded-pill w-52 h-12 cursor-pointer"
                                         >
                                           {{
@@ -445,6 +449,39 @@
                 </table>
               </div>
             </div>
+            <v-snackbar v-model="error.displayError" multi-line>
+              <div v-if="error.errorCode" class="text-center">
+                <span class="mx-2">Something Went Wrong!</span>
+              </div>
+              <div v-else class="text-center">
+                <span class="mx-2">Something Went Wrong tow!</span>
+              </div>
+
+              <template v-slot:action="{ attrs }">
+                <v-btn
+                  color="red"
+                  text
+                  v-bind="attrs"
+                  @click="error.displayError = false"
+                >
+                  Close
+                </v-btn>
+              </template>
+            </v-snackbar>
+
+            <v-snackbar
+              :timeout="2000"
+              :value="true"
+              fixed
+              bottom
+              color="success"
+              elevation="24"
+              v-model="dialoges.success"
+            >
+              <div class="text-center">
+                Saved successfully <v-icon class="mx-2">mdi-check-bold</v-icon>
+              </div>
+            </v-snackbar>
           </v-col>
         </v-row>
       </v-container>
@@ -474,50 +511,79 @@ export default Vue.extend({
     dialog: false,
     dialog2: false,
     dialog3: false,
+    dialoges: {
+      success: false,
+    },
+    error: {
+      displayError: false,
+    },
     validationRules: validate.validation,
-    newData: [] as models.ticket[],
+    newData: {} as models.ticket,
+    editData: {} as models.ticket,
+    allTickets: [] as models.ticket[],
     lists: [
       { title: "Edit", iconn: "mdi-grease-pencil" },
       { title: "Delete", iconn: "mdi-delete-forever-outline" },
     ],
-    Tickets: [
-      {
-        NameClient: "tickets.table.tbody.tr1.td1",
-        NameEmployee: "tickets.table.tbody.tr1.td2",
-        Phone: "tickets.table.tbody.tr1.td3",
-        Status: "tickets.table.tbody.tr1.td4.value",
-        id: 1,
-      },
-      {
-        NameClient: "tickets.table.tbody.tr2.td1",
-        NameEmployee: "tickets.table.tbody.tr2.td2",
-        Phone: "tickets.table.tbody.tr2.td3",
-        Status: "tickets.table.tbody.tr2.td4.value",
-        id: 2,
-      },
-      {
-        NameClient: "tickets.table.tbody.tr3.td1",
-        NameEmployee: "tickets.table.tbody.tr3.td2",
-        Phone: "tickets.table.tbody.tr3.td3",
-        Status: "tickets.table.tbody.tr3.td4.value",
-        id: 3,
-      },
-      {
-        NameClient: "tickets.table.tbody.tr4.td1",
-        NameEmployee: "tickets.table.tbody.tr4.td2",
-        Phone: "tickets.table.tbody.tr4.td3",
-        Status: "tickets.table.tbody.tr4.td4.value",
-        id: 1,
-      },
-      {
-        NameClient: "tickets.table.tbody.tr5.td1",
-        NameEmployee: "tickets.table.tbody.tr5.td2",
-        Phone: "tickets.table.tbody.tr5.td3",
-        Status: "tickets.table.tbody.tr5.td4.value",
-        id: 2,
-      },
-    ],
   }),
+  watch: {
+    "$store.state.Tickets": {
+      immediate: true,
+      deep: true,
+      handler() {
+        this.allTickets = this.$store.state.Tickets;
+      },
+    },
+  },
+  methods: {
+    AddTicket() {
+      const form = this.$refs.addTickect as HTMLFormElement;
+      if (form && form.validate()) {
+        console.log("heloo");
+        this.newData.id = Math.random();
+        this.newData.ticketStatus = 1;
+        this.$store.state.Tickets.push(this.newData);
+        console.log(this.$store.state.Tickets);
+        this.dialoges.success = true;
+        this.dialog3 = false;
+      } else {
+        this.error.displayError = true;
+      }
+    },
+    sendID(ticket: models.ticket) {
+      this.editData = Object.assign({}, ticket);
+      console.log(this.editData);
+    },
+    EditTicket() {
+      const form = this.$refs.changeData as HTMLFormElement[];
+      console.log(form);
+      if (form && form[0].validate()) {
+        let ticketss = this.$store.state.Tickets;
+        // let getTicket = ticketss.filter((x: models.ticket) => x.id == this.editData.id);
+        // getTicket[0] = this.editData;
+        for (let i = 0; i < ticketss.length; i++) {
+          if (ticketss[i].id == this.editData.id) {
+            ticketss[i] = this.editData;
+          }
+        }
+        this.$store.commit("get_ticket", ticketss);
+        this.dialoges.success = true;
+        this.dialog = false;
+        console.log(this.editData);
+      } else {
+        this.error.displayError = true;
+      }
+    },
+    DeleteTicket() {
+      console.log("test");
+      let ticketss = this.$store.state.Tickets;
+      for (let i = 0; i < ticketss.length; i++) {
+        if (ticketss[i].id) {
+          ticketss[i].splice({});
+        }
+      }
+    },
+  },
 });
 </script>
 

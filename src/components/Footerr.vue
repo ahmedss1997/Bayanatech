@@ -19,11 +19,11 @@
                 <p class="mb-0 mx-3">{{ footlist.title }}</p>
               </li>
             </ul>
-            <ul class="flex my-6 md:justify-center">
+            <ul class="sociall flex my-6 md:justify-center">
               <li
                 v-for="(social, i) in socials"
                 :key="i"
-                class="d-flex align-center ml-3"
+                class="d-flex align-center mx-3"
               >
                 <span
                   class="w-10 h-10 leading-10 text-center rounded-full support"
@@ -163,6 +163,16 @@ export default Vue.extend({
       @media (max-width: 960px) {
         display: block;
         margin: 0 auto;
+      }
+    }
+    .sociall {
+      li {
+        &:first-child {
+          margin: 0px !important;
+        }
+        &:nth-child(3) {
+          margin: 0px !important;
+        }
       }
     }
   }

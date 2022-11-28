@@ -12,13 +12,11 @@ export interface iLogin {
 
 export interface ticket {
   id?: number;
-  fullName: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  verifyCode: number;
-  password: string;
-  repeatPass?: string; // for front
+  ticketStatus?: number;
+  NameClient: string;
+  NameEmployee: string;
+  Phone: string;
+  Status: string;
 }
 
 export interface user {

@@ -286,7 +286,7 @@
           "td2": "Jessy",
           "td3": "+966123468767",
           "td4": {
-            "id": 1,
+            "ticketStatus": 1,
             "value": "Done"
           }
         },
@@ -295,7 +295,7 @@
           "td2": "Fored",
           "td3": "+966123468767",
           "td4": {
-            "id": 2,
+            "ticketStatus": 2,
             "value": "Processing"
           }
         },
@@ -304,7 +304,7 @@
           "td2": "Jessy",
           "td3": "+966123468767",
           "td4": {
-            "id": 3,
+            "ticketStatus": 3,
             "value": "Waiting Response"
           }
         },        
@@ -313,7 +313,7 @@
           "td2": "Danial",
           "td3": "+966123468767",
           "td4": {
-            "id": 1,
+            "ticketStatus": 1,
             "value": "Done"
           }
         },
@@ -322,7 +322,7 @@
           "td2": "Hary",
           "td3": "+966123468767",
           "td4": {
-            "id": 2,
+            "ticketStatus": 2,
             "value": "Processing"
           }
         }

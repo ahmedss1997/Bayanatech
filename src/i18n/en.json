@@ -272,6 +272,11 @@
   "tickets": {
     "heading": "Tickets",
     "btn": "Add New Ticket",
+    "Status": {
+      "status1":"Done",
+      "status2":"inprogress",
+      "status3":"Waiting Response"
+    },
     "table": {
       "thead": {
         "th1": "NameClient",

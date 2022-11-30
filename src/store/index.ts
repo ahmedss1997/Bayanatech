@@ -12,7 +12,6 @@ export default new Vuex.Store({
         NameClient: "tickets.table.tbody.tr1.td1",
         NameEmployee: "tickets.table.tbody.tr1.td2",
         Phone: "tickets.table.tbody.tr1.td3",
-        Status: "tickets.table.tbody.tr1.td4.value",
         ticketStatus: 1,
       },
       {
@@ -20,7 +19,6 @@ export default new Vuex.Store({
         NameClient: "tickets.table.tbody.tr2.td1",
         NameEmployee: "tickets.table.tbody.tr2.td2",
         Phone: "tickets.table.tbody.tr2.td3",
-        Status: "tickets.table.tbody.tr2.td4.value",
         ticketStatus: 2,
       },
       {
@@ -28,7 +26,6 @@ export default new Vuex.Store({
         NameClient: "tickets.table.tbody.tr3.td1",
         NameEmployee: "tickets.table.tbody.tr3.td2",
         Phone: "tickets.table.tbody.tr3.td3",
-        Status: "tickets.table.tbody.tr3.td4.value",
         ticketStatus: 3,
       },
       {
@@ -36,7 +33,6 @@ export default new Vuex.Store({
         NameClient: "tickets.table.tbody.tr4.td1",
         NameEmployee: "tickets.table.tbody.tr4.td2",
         Phone: "tickets.table.tbody.tr4.td3",
-        Status: "tickets.table.tbody.tr4.td4.value",
         ticketStatus: 1,
       },
       {
@@ -44,7 +40,6 @@ export default new Vuex.Store({
         NameClient: "tickets.table.tbody.tr5.td1",
         NameEmployee: "tickets.table.tbody.tr5.td2",
         Phone: "tickets.table.tbody.tr5.td3",
-        Status: "tickets.table.tbody.tr5.td4.value",
         ticketStatus: 2,
       },
     ],

@@ -101,7 +101,7 @@
                               >
                               </vue-tel-input-vuetify>
                             </v-col>
-                            <v-col class="px-3 mb-4" cols="12" md="6">
+                            <!-- <v-col class="px-3 mb-4" cols="12" md="6">
                               <span class="font-weight-bold px-0 my-3 d-block">
                                 {{ $t(`tickets.table.thead.th4`) }}
                               </span>
@@ -114,7 +114,9 @@
                                 v-model="newData.Status"
                                 :rules="validationRules.textRules"
                               ></v-text-field>
-                            </v-col>
+                            </v-col> -->
+                          </v-row>
+                          <div class="text-center">
                             <v-btn
                               class="primary txtOnPrimary--text text-capitalize font-bold text-h6 my-10 mx-auto pt-3 pb-4 px-10 d-block rounded-pill"
                               height="50"
@@ -123,7 +125,7 @@
                             >
                               {{ $t(`tickets.table.dialogs.btnSend`) }}
                             </v-btn>
-                          </v-row>
+                          </div>
                         </v-form>
                       </v-container>
                     </v-card-text>
@@ -174,7 +176,9 @@
                               : 'waitingbtn txtOnPrimary--text'
                           "
                         >
-                          {{ $t(ticket.Status) }}
+                          {{
+                            $t(`tickets.Status.status${ticket.ticketStatus}`)
+                          }}
                         </v-btn>
                       </td>
                       <td class="text-right px-6">
@@ -333,17 +337,45 @@
                                                 $t(`tickets.table.thead.th4`)
                                               }}
                                             </span>
-                                            <v-text-field
-                                              class=""
-                                              height="40"
-                                              :label="
-                                                $t(`tickets.table.thead.th4`)
-                                              "
+                                            <v-autocomplete
+                                              v-model="editData.ticketStatus"
+                                              :rules="[
+                                                () =>
+                                                  !!editData.ticketStatus ||
+                                                  'This field is required',
+                                              ]"
+                                              :items="[1, 2, 3]"
+                                              :label="$t(`form.select`)"
                                               solo
-                                              :hide-details="false"
-                                              v-model="editData.Status"
-                                              :rules="validationRules.textRules"
-                                            ></v-text-field>
+                                              required
+                                              clearable
+                                            >
+                                              <template v-slot:selection="data">
+                                                <v-chip
+                                                  :color="
+                                                    data.item == 1
+                                                      ? 'donebtn txtOnPrimary--text'
+                                                      : data.item == 2
+                                                      ? 'processbtn txtOnPrimary--text'
+                                                      : 'waitingbtn txtOnPrimary--text'
+                                                  "
+                                                >
+                                                  {{
+                                                    $t(
+                                                      `tickets.Status.status${data.item}`
+                                                    )
+                                                  }}
+                                                </v-chip>
+                                              </template>
+
+                                              <template v-slot:item="data">
+                                                <span>{{
+                                                  $t(
+                                                    `tickets.Status.status${data.item}`
+                                                  )
+                                                }}</span>
+                                              </template>
+                                            </v-autocomplete>
                                           </v-col>
                                           <v-btn
                                             class="primary txtOnPrimary--text text-capitalize font-bold text-h6 my-10 mx-auto pt-3 pb-4 px-10 d-block rounded-pill"
@@ -416,7 +448,7 @@
                                     <v-container>
                                       <v-row no-gutters class="justify-center">
                                         <div
-                                          @click="DeleteTicket()"
+                                          @click="DeleteTicket(ticket.id)"
                                           class="shadow-none border-blue-600 border-solid border hover:bg-blue-600 hover:text-white text-primary transition-all duration-500 ease-in-out flex flex-none justify-center items-center text-capitalize font-bold text-h6 mx-3 mb-5 rounded-pill w-52 h-12 cursor-pointer"
                                         >
                                           {{
@@ -541,7 +573,7 @@ export default Vue.extend({
       if (form && form.validate()) {
         console.log("heloo");
         this.newData.id = Math.random();
-        this.newData.ticketStatus = 1;
+        this.newData.ticketStatus = 3;
         this.$store.state.Tickets.push(this.newData);
         console.log(this.$store.state.Tickets);
         this.dialoges.success = true;
@@ -574,14 +606,12 @@ export default Vue.extend({
         this.error.displayError = true;
       }
     },
-    DeleteTicket() {
-      console.log("test");
-      let ticketss = this.$store.state.Tickets;
-      for (let i = 0; i < ticketss.length; i++) {
-        if (ticketss[i].id) {
-          ticketss[i].splice({});
-        }
-      }
+    DeleteTicket(id: number) {
+      // get all tickets that doesn't have the id of the ticket I want to delete
+      let ticketss = this.$store.state.Tickets.filter(
+        (x: models.ticket) => x.id != id
+      );
+      this.$store.commit("get_ticket", ticketss);
     },
   },
 });

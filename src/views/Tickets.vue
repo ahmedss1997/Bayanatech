@@ -89,7 +89,7 @@
                                 :rules="validationRules.textRules"
                               ></v-text-field>
                             </v-col>
-                            <v-col class="px-3 mb-4" cols="12" md="6">
+                            <v-col class="px-3 mb-4" cols="12">
                               <span class="font-weight-bold px-0 my-3 d-block">
                                 {{ $t(`form.phone`) }}
                               </span>

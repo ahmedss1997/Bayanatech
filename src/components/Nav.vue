@@ -149,7 +149,7 @@
                 </v-container>
               </v-list>
             </v-menu>
-            <v-menu
+            <!-- <v-menu
               offset-y
               transition="slide-x-transition"
               nudge-bottom="17"
@@ -207,7 +207,7 @@
                   </v-row>
                 </v-container>
               </v-list>
-            </v-menu>
+            </v-menu> -->
             <v-menu
               offset-y
               transition="slide-x-transition"
@@ -246,6 +246,15 @@
                 exact
               >
                 {{ $t("navBar.nav.recruitment") }}
+              </router-link>
+            </li>
+            <li class="cursor-pointer text-body-2">
+              <router-link
+                to="/ticket"
+                exact-active-class="primary--text activeNav"
+                exact
+              >
+                {{ $t("navBar.nav.tickets") }}
               </router-link>
             </li>
           </ul>

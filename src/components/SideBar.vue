@@ -157,18 +157,18 @@ export default {
           { title: "sideBar.servicesList.link6", path: "/services" },
         ],
       },
-      {
-        action: "mdi-lightbulb-on-outline",
-        title: "sideBar.side.solutions",
-        // path: "",
-        includeList: true,
-        list: [
-          { title: "sideBar.solutionsList.link1", path: "" },
-          { title: "sideBar.solutionsList.link2", path: "" },
-          { title: "sideBar.solutionsList.link3", path: "" },
-          { title: "sideBar.solutionsList.link4", path: "" },
-        ],
-      },
+      // {
+      //   action: "mdi-lightbulb-on-outline",
+      //   title: "sideBar.side.solutions",
+      //   // path: "",
+      //   includeList: true,
+      //   list: [
+      //     { title: "sideBar.solutionsList.link1", path: "" },
+      //     { title: "sideBar.solutionsList.link2", path: "" },
+      //     { title: "sideBar.solutionsList.link3", path: "" },
+      //     { title: "sideBar.solutionsList.link4", path: "" },
+      //   ],
+      // },
       {
         action: "mdi-check-decagram",
         title: "sideBar.side.products",
@@ -183,6 +183,12 @@ export default {
         action: "mdi-briefcase-search",
         title: "sideBar.side.recruitment",
         path: "/jobs",
+        includeList: false,
+      },
+      {
+        action: "mdi-ticket",
+        title: "sideBar.side.tickets",
+        path: "/ticket",
         includeList: false,
       },
       {
